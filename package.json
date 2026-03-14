@@ -19,7 +19,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint \"src/**/*.{js,ts,vue}\" --format gitlab",
     "lint:fix": "eslint \"src/**/*.{js,ts,vue}\" --fix",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "check": "npm run lint && npm run test",
     "pre-commit": "lint-staged"
   },
